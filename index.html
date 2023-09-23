@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assem: Conversation in Code</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8e5a549959.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Your content goes here -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-x mark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Assem</span></h1>
+            <h2>Conversation in Code</h2>
+        </div>
+    </div>
+</div>
+<!-- -------ABOUT ME SECTION-------------- -->
+
+
+
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>
+                    Hi, I'm Assem. I'm a Software Engineer and <span class="highlight-keyword">Computer Science</span> and <span class="highlight-keyword">Finance</span> major at <span class="highlight-keyword">Minerva University</span>, known for my affinity for web development and the fusion of mathematical insights with <span class="highlight-keyword">TensorFlow</span>-driven <span class="highlight-keyword">Machine Learning</span>. Beyond the codescape, I'm a global explorer, having immersed myself in cultures from Seoul to Buenos Aires during my academic tenure. Fluent in a myriad of languages, including <span class="highlight-keyword">Russian</span>, <span class="highlight-keyword">German</span>, <span class="highlight-keyword">French</span>, and <span class="highlight-keyword">Spanish</span>, I bridge the divide between code and conversation. My technical ventures, like the innovative <span class="highlight-keyword">'Seat Detector'</span> and <span class="highlight-keyword">'Tinder for Food'</span>, mirror my passion for practical, real-world applications. As a <span class="highlight-keyword">Teacher Assistant</span> for <span class="highlight-keyword">Data Structures</span> and <span class="highlight-keyword">Algorithms</span>, I've enhanced educational materials with AI-centric tools. I'm enthusiastic about collaborating, innovating, and redefining technological boundaries.
+                </p>            
+                <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span class="title">Web Development</span><br>With expertise in <span class="highlighted">Python</span>, <span class="highlighted">Java</span>, <span class="highlighted">JavaScript</span>, <span class="highlighted">R</span>, and hands-on experience with <span class="highlighted">Django</span>, <span class="highlighted">Flask</span>, <span class="highlighted">React</span>, <span class="highlighted">Tensorflow</span>, <span class="highlighted">Unittest</span>, I'm adept at utilizing tools like <span class="highlighted">Docker</span>, <span class="highlighted">Git</span>, <span class="highlighted">VisualStudio</span>, <span class="highlighted">Google Cloud</span>, and <span class="highlighted">Heroku</span>, combined with a strong foundation in <span class="highlighted">HTML</span> and <span class="highlighted">CSS</span>.</li>
+                    <li><span class="title">Product Management</span><br>Certified in <span class="highlighted">Project Management by Google</span>, I proficiently harness tools like <span class="highlighted">Jira</span>, <span class="highlighted">Asana</span>, <span class="highlighted">Tableau</span>, <span class="highlighted">MS Office</span>, and <span class="highlighted">Excel</span>, and am well-versed in methodologies like <span class="highlighted">Waterfall</span> and <span class="highlighted">Agile</span>.</li>
+                    <li><span class="title">Data Analysis</span><br>Having taken courses in <span class="highlighted">Probability</span>, <span class="highlighted">Statistics</span>, and <span class="highlighted">Optimization Methods</span>, I specialize in data visualization with <span class="highlighted">Matplotlib</span>, <span class="highlighted">Seaborn</span>, and <span class="highlighted">Pandas</span>, while leveraging <span class="highlighted">SQL</span> expertise, certified by Coursera, and tools like <span class="highlighted">Tableau</span> and <span class="highlighted">Excel</span> for comprehensive data analysis.</li>
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li>
+                        <span class="title">June 2023 - August 2023</span><br>
+                        Instructor at <span class="highlighted">iD Tech</span>, Stanford, CA. Educated 100 students in <span class="highlighted">Python</span>, <span class="highlighted">Java</span>, and <span class="highlighted">ML</span>, and coordinated complex <span class="highlighted">ML</span> projects such as <span class="highlighted">YOLO</span>.
+                    </li>
+                    <li>
+                        <span class="title">June 2023 - August 2023</span><br>
+                        Teacher Assistant at <span class="highlighted">Minerva University</span>, San Francisco, CA. Enhanced course materials with <span class="highlighted">AI tools</span> and proposed innovative assignments.
+                    </li>
+                    <li>
+                        <span class="title">September 2021 - May 2023</span><br>
+                        Experienced Admissions Processor at <span class="highlighted">Minerva University</span>. Analyzed application data with <span class="highlighted">SQL</span>, <span class="highlighted">Python libraries</span>, and developed an <span class="highlighted">API bot</span> to guide student applications.
+                    </li>
+                </ul>
+            </div>                   
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li>
+                        <span class="title">2021 - Expected 2025</span> <span class="university">Minerva University, San Francisco, CA</span><br>
+                        Pursuing a Bachelor of Science in Computer Science and Business. Engaged in a global immersion program, I've experienced living in <span class="highlighted">Seoul</span>, <span class="highlighted">Taipei</span>, <span class="highlighted">Hyderabad</span>, <span class="highlighted">Buenos Aires</span>, and <span class="highlighted">San Francisco</span>. I anticipate future relocations to <span class="highlighted">London</span> and <span class="highlighted">Berlin</span>. My academic journey includes courses such as Data Structures, Algorithms, Probability, Statistics, and Software Development, among others.
+                    </li>
+                    <li>
+                        <span class="title">2015 - 2021</span> <span class="university">Nazarbayev Intellectual Schools, Astana, Kazakhstan</span><br>
+                        Successfully completed the International Baccalaureate (IB) program. Undertook extended courses in Physics and Mathematics, encompassing discrete and applicable math. Also studied Economics and Chemistry and achieved a commendable score of 40 in the final IB examination.
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- ------Services --------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Development</h2>
+                <p>Specialized in creating robust and efficient applications using technologies like Django, Flask, React.js, and TensorFlow. Proven skills in integrating AI, ML, and database solutions for real-world applications.</p>
+                <a href="#">Learn More</a>
+            </div>    
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Analysis</h2>
+                <p>Performing in-depth data analysis using tools such as SQL, Python libraries, and spreadsheets. Expertise in extracting meaningful insights from large datasets and refining processes based on results.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-tasks"></i>
+                <h2>Product Management</h2>
+                <p>Expertise in product roadmap development, feedback integration, and iterative development. Proficient in managing both front and back-end teams using methodologies such as Agile and Waterfall.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------Portfolio --------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <!-- Seat Detector Project -->
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Seat Detector</h3>
+                    <p>Employed a dataset to fine-tune the YOLO model for seat detection. Developed a web service with continuous database updates from CCTV footage, improving restaurant seat availability response time.</p>
+                    <a href="https://github.com/ichbinassem/seat_detector"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- Tinder for Food Project -->
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Tinder for Food</h3>
+                    <p>Designed a login system for a food-matching service. Managed front and back-end teams, and prototyped the app interface for effective delivery.</p>
+                    <a href="https://github.com/ichbinassem/munch_match"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- Gene Analysis Project (Placeholder till I receive more information) -->          
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Gene Analysis</h3>
+                    <p>Developed a Python program to analyze genealogical mutation sequencing. Implemented algorithms for Longest Common Subsequence detection, data recovery from sequencing glitches, and matrix-based relationship analysis of genes.</p>
+                    <a href="https://drive.google.com/file/d/1Og6xnjNW67n56NuhBFzEE2PsMauixb68/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ------Contacts --------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>Let's work together. I'm always looking for new opportunities to grow and learn.</p>
+                <p><i class="fa-regular fa-paper-plane"></i>assem@uni.minerva.edu</p>
+                <p><i class="fa-solid fa-phone"></i>+7 (771) 165-71-51</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/eyessemas/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/eyessemas/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/ichbinassem"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder=" Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Assem. Made by Conversation with Code.</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        event.currentTarget.classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemanu = document.getElementById("sidemenu"); 
+    function openmenu(){
+        sidemanu.style.right = "0";
+    }
+    function closemenu(){
+        sidemanu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/a/macros/uni.minerva.edu/s/AKfycbxIhFrtMC-Axijcgj2UrtvIiK16TsMFCg0hyASvzaHdNwz7Z_bGBeCf-ykOWlELAIrU8A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => 
+          msg.innerHTML = "Thanks for your message! I'll get back to you soon.")
+          setTimeout(function(){
+            msg.innerHTML = "" 
+        }, 5000)
+        form.reset()
+        
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
