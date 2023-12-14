@@ -199,6 +199,7 @@ nav ul li a:hover::after{
     overflow: hidden;
     border-radius: 10px;
 }
+
 .work img{
     width: 100%;
     border-radius: 10px;
@@ -393,4 +394,13 @@ nav .fa-solid{
     color: #61b752; 
     margin-top: -40px;
     display: block;
+}
+.hidden {
+    display: none;
+}
+.additional-projects {
+    display: none; /* Initially hidden */
+    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
 }

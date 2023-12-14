@@ -153,7 +153,34 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <div class="additional-projects hidden">
+            <div class="work">
+                <img src="images/optimization.jpg">
+                <div class="layer">
+                    <h3>Equality Constrained Optimization</h3>
+                    <p>Utilized multivariable calculus and gradient ascent to optimize channel cross-sections, enhancing fluid dynamics and flow efficiency.</p>
+                    <a href="https://drive.google.com/file/d/1WaYlRfXzId8EWC2HdiqjdV_Y7I97iIPO/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/speech_recognition.jpg">
+                <div class="layer">
+                    <h3>Enhancing Speech Recognition for Disabilities</h3>
+                    <p>Developed a speech recognition system focusing on disordered speech, using neural networks to improve communication aid accessibility.</p>
+                    <a href="https://drive.google.com/file/d/122ZcYsRQFvBw5FUstQvKB9AoEu_FSeGY/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/robot.jpg">
+                <div class="layer">
+                    <h3>Universidad Abierta Interamericana Robitics Lab</h3>
+                    <p>Integrated ChatGPT API to facilitate teaching with a robot. Employed MqTT protocol to communicate the AI-generated response through the internet of things</p>
+                    <a href="https://drive.google.com/file/d/1aRPffo4DGj-5PZlMfY8VEsORj3GHF5OW/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="javascript:void(0);" class="btn" onclick="toggleProjects()">See More</a>
     </div>
 </div>
 
@@ -229,6 +256,21 @@
         
         .catch(error => console.error('Error!', error.message))
     })
+</script>
+<script>
+    function toggleProjects() {
+        var additionalProjects = document.querySelector('.additional-projects');
+        var seeMoreBtn = document.querySelector('.btn');
+
+        // Toggle visibility
+        if (additionalProjects.style.display === "none" || additionalProjects.style.display === "") {
+            additionalProjects.style.display = "grid";
+            seeMoreBtn.textContent = 'Hide';
+        } else {
+            additionalProjects.style.display = "none";
+            seeMoreBtn.textContent = 'See More';
+        }
+    }
 </script>
 </body>
 </html>
